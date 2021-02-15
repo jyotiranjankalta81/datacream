@@ -15,15 +15,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #nav {
-  align-items: center;
-  padding: 0px 30px 0px 30px;
-  background: rgb(126, 238, 103);
-  background: linear-gradient(
-    to left,
-    rgb(103, 238, 114) 30%,
-    rgb(247, 251, 228) 50%
-  );
-  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex : 1;
+}
+.navtext{
+  z-index: 999999;
 }
 ul {
   padding: 20px;
@@ -34,12 +31,15 @@ ul {
   overflow: hidden;
 }
 .secondhalf-nav{
-  background: linear-gradient(
-    to left,
-    rgb(0, 183, 19) 40%,
-    rgb(240, 248, 213) 10%,
+  position: absolute;
+  inset: 0px;
+  background : linear-gradient(
+    300deg,
+    #008712 50%,
+    rgb(233, 246, 199) 90%
   );
-  width: 100%;
+  transform: skew(20deg);
+  margin-right: -20px;
 }
 .page {
   display: flex;
@@ -51,7 +51,7 @@ ul {
   background: linear-gradient(
     to right,
     rgb(4, 163, 18) 20%,
-    rgb(232, 249, 216) 80%
+    rgb(233, 246, 199) 80%
   );
   height: 5vh;
   border-radius: 5px;
@@ -115,7 +115,7 @@ ul {
 }
 .instructions {
   background: linear-gradient(
-    to left,
+    300deg,
     rgb(1, 183, 18) 20%,
     rgb(233, 246, 199) 90%
   );
@@ -137,7 +137,7 @@ ul {
   border-style: solid;
   border-color: rgb(103, 233, 103);
   background: linear-gradient(
-    180deg,
+    160deg,
     rgb(76, 192, 32) 20%,
     rgb(251, 254, 224) 80%
   );
@@ -173,5 +173,6 @@ ul {
   width: 10%;
 }
 .padding{
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

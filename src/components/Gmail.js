@@ -8,7 +8,7 @@ export default class Gmail extends Component {
             <div className="contact">
             Have a question you'd like to see?<br />
             Let me know!<h1/><h1 />
-            <img src="./gmail.png" className="img"></img>
+            <img src="./gmail_blue.png" className="img"></img>
           </div>
             </div>
         )
